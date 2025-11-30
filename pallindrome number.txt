@@ -1,0 +1,13 @@
+bool isPalindrome(int x) {
+    double rem,pal=0,original=x;
+    while(x>0){
+        rem=x%10;
+        pal=pal*10+rem;
+        x/=10;
+    }
+    if(pal==original){
+        return true;
+    }else{
+        return false;
+    }
+}
